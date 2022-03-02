@@ -10,15 +10,15 @@
 <h2>Barugu Manoj Kumar orders a computer</h2>
 <form >
     <input type="checkbox" id="extraMemory" name="extraMemory"   
-      value="extra" checked>
+      value="extra" checked style = "margin-left: 10px;">
     <label for="extraMemory">Extra memory</label></br>
   
     <input type="checkbox" id="Mouse" name="Mouse" 
-       value="mouse" checked>
+       value="mouse" checked style = "margin-left: 60px;">
     <label for="Mouse">Mouse</label></br>
   
     <input type="checkbox" id="cellService" name="cellService"   
-       value="cell" checked>
+       value="cell" checked style = "margin-left: 27px;">
     <label for="cellService">Cell service</label></br>
     <input type="button" onclick="orderComputer()" value="Order a Computer">
   </form>
@@ -26,9 +26,9 @@
   <br>
   <form>
     <label for="propertyname">Enter a property name </label>
-    <input type ="text" id="propertyname" name="propertyname" min=10 max=50 step=2 value="engraved"> <br><br>
+    <input type ="text" id="propertyname" name="propertyname" min=10 max=50 step=2 value="engraved" style = "margin-left: 10px;"> <br><br>
     <label for="propertyvalue">Enter a value</label>
-    <input type ="text" id="propertyvalue" name="propertyvalue" autofocus > <br> <br>
+    <input type ="text" id="propertyvalue" name="propertyvalue" autofocus style = "margin-left: 60px;" > <br> <br>
     <input type="button" onclick="updateComputer()" value="Update the computer">
 </form>
 <p id="result"></p>
