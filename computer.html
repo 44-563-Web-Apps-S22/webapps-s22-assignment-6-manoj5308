@@ -3,46 +3,41 @@
     <head>
         <title>Computerpage</title>
     </head>
+    
 
 <body>
 
 <h2>Barugu Manoj Kumar orders a computer</h2>
 <form >
     <input type="checkbox" id="extraMemory" name="extraMemory"   
-      value="extra">
+      value="extra" checked>
     <label for="extraMemory">Extra memory</label></br>
-
+  
     <input type="checkbox" id="Mouse" name="Mouse" 
-       value="mouse">
+       value="mouse" checked>
     <label for="Mouse">Mouse</label></br>
-
+  
     <input type="checkbox" id="cellService" name="cellService"   
-       value="cell">
+       value="cell" checked>
     <label for="cellService">Cell service</label></br>
-
     <input type="button" onclick="orderComputer()" value="Order a Computer">
   </form>
-
   <p id="result"></p>
   <br>
   <form>
     <label for="propertyname">Enter a property name </label>
     <input type ="text" id="propertyname" name="propertyname" min=10 max=50 step=2 value="engraved"> <br><br>
-
     <label for="propertyvalue">Enter a value</label>
     <input type ="text" id="propertyvalue" name="propertyvalue" autofocus > <br> <br>
-
     <input type="button" onclick="updateComputer()" value="Update the computer">
 </form>
 <p id="result"></p>
 <br>
   <script>
       function orderComputer(){
-
        extra=document.getElementById("extraMemory").checked
        mouse = document.getElementById("Mouse").checked
        cell = document.getElementById("cellService").checked
-
       if(extra){
       my_computer["extra"]=true
       }
@@ -61,11 +56,10 @@
       else{
       my_computer["cell"]=false
       }
-
     document.getElementById("results").innerHTML="<b>Extra Money:</b>"+my_computer.extra+", <b>Mouse:</b>"+my_computer.Mouse+", <b>Cell Service:</b>"+my_computer.cell
 }
     var my_computer={}
-
+    
     function updateComputer(){
        var a=document.getElementById("propertyname").value
        var b=document.getElementById("propertyvalue").value
@@ -74,6 +68,5 @@
         console.log(my_computer)
     }
     </script>
-
 </body>
 </html>
